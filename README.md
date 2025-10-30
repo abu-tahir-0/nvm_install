@@ -7,6 +7,58 @@ This repository contains automated installation scripts for NVM (Node Version Ma
 - `install_nvm.ps1` - PowerShell script for Windows
 - `install_nvm.sh` - Bash script for Linux/macOS
 
+## 📥 Getting the Scripts
+
+### Method 1: Clone the Repository (Recommended)
+
+**Using Git:**
+```bash
+# Clone the repository
+git clone https://github.com/abu-tahir-0/nvm_install.git
+
+# Navigate to the directory
+cd nvm_install
+```
+
+**Using GitHub CLI:**
+```bash
+# Clone using GitHub CLI
+gh repo clone abu-tahir-0/nvm_install
+
+# Navigate to the directory
+cd nvm_install
+```
+
+### Method 2: Download ZIP
+
+1. **Go to the repository**: [https://github.com/abu-tahir-0/nvm_install](https://github.com/abu-tahir-0/nvm_install)
+2. **Click the green "Code" button**
+3. **Select "Download ZIP"**
+4. **Extract the ZIP file** to your desired location
+5. **Navigate to the extracted folder**
+
+### Method 3: Download Individual Files
+
+**Windows PowerShell:**
+```powershell
+# Create directory
+mkdir nvm_install
+cd nvm_install
+
+# Download Windows script
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/abu-tahir-0/nvm_install/main/install_nvm.ps1" -OutFile "install_nvm.ps1"
+```
+
+**Linux/macOS:**
+```bash
+# Create directory
+mkdir nvm_install
+cd nvm_install
+
+# Download Linux script
+curl -o install_nvm.sh https://raw.githubusercontent.com/abu-tahir-0/nvm_install/main/install_nvm.sh
+```
+
 ## 🖥️ Windows Installation
 
 ### Prerequisites
@@ -21,9 +73,13 @@ This repository contains automated installation scripts for NVM (Node Version Ma
    # Right-click on PowerShell and select "Run as Administrator"
    ```
 
-2. **Navigate to the script directory**
+2. **Navigate to the downloaded/cloned directory**
    ```powershell
-   cd "path\to\nvm\folder"
+   # If you cloned the repository
+   cd nvm_install
+   
+   # Or if you downloaded and extracted ZIP
+   cd "path\to\extracted\nvm_install"
    ```
 
 3. **Set execution policy (if needed)**
@@ -68,9 +124,13 @@ This repository contains automated installation scripts for NVM (Node Version Ma
 
 1. **Open Terminal**
 
-2. **Navigate to the script directory**
+2. **Navigate to the downloaded/cloned directory**
    ```bash
-   cd /path/to/nvm/folder
+   # If you cloned the repository
+   cd nvm_install
+   
+   # Or if you downloaded and extracted ZIP
+   cd /path/to/extracted/nvm_install
    ```
 
 3. **Make the script executable**
